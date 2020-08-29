@@ -1,0 +1,61 @@
+.footer{
+    background-color: $secondary;
+}
+
+.footer-container{
+    max-width: 1110px;
+    margin: 0 auto;
+    /*LOGO連結*/
+    h1{
+        background-image: url(../img/d’Perfumew.png);
+        width: 128px;
+        height: 38px;
+        margin-bottom: 0px;
+        a{
+            text-indent:199%;
+            overflow:hidden;
+            white-space:nowrap;
+            line-height: 56px;
+            display: inline-block;
+        }
+    }
+    span{
+        padding-left: 20px;
+    }
+    /*引導選單*/
+    .menu{
+        ul{
+            margin-bottom: 0px;
+        }
+        a{
+            line-height: 56px;
+            color: white;
+            display: block;
+            padding-right: 16px;
+            padding-left: 16px;
+            font-size: $text-m;
+            img{
+                margin-right: 4px;
+            }
+            &:hover{
+                color: $primary;
+            }
+        }
+    }
+}
+
+@media(max-width:370px){
+    .footer-container{
+        span{
+        font-size: 12px;
+        }
+    }
+}
+
+@media(max-width:768px){
+    .footer{
+        .menu{
+            display: none;
+        }
+    }
+}

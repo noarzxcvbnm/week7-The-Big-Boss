@@ -1,0 +1,16 @@
+@mixin PictureReplaceText{
+    text-indent:101%;
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+@mixin TextVertical{
+    webkit-writing-mode: vertical-lr;
+    writing-mode: vertical-lr ;
+}
+
+@mixin BoxSize {
+    box-sizing:border-box;
+}
+
+

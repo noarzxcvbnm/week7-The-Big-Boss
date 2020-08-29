@@ -1,0 +1,52 @@
+.subscribe{
+    height: 600px;
+    background-image: url(../img/Subscribe.png);
+    background-position:center;
+    .subscribe-container{
+        max-width: 1110px;
+        margin: 0 auto;
+        padding-top:320px;
+        padding-left: 20px;
+        form{
+            font-size:0px; /*加入這一行讓input之間的預設空隙消失*/
+        }
+        label{
+            color:#8D8D8D;
+            margin-bottom:20px ;
+            text-align: left;
+            
+        }
+        input{
+            border:solid 2px $secondary;
+            line-height: 60px;
+            font-size:$text-s;
+            padding-left:16px;
+        }
+        .submit{
+            background-color: $secondary;
+            border:solid 2px $secondary;
+            color:white;
+            padding-left: 27px;
+            padding-right: 27px;
+            font-size:$text-s;
+            &:hover{
+                background-color:$primary;
+                border:solid 2px $primary;
+            }
+        }
+    }
+}
+
+@media(max-width:370px){
+    .subscribe{
+        .subscribe-container{
+        padding-top:200px;
+        }
+        input{
+            width: 90%;
+        }
+        .submit{
+            width: 90%;
+        }
+    }
+}

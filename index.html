@@ -1,0 +1,194 @@
+<!--專案筆記-->
+<!--筆記:行動預覽模式在拖拉狀態中會導致跑版所以不要在拖拉中判斷結果-->
+<!--筆記:標籤與該標籤的class屬於同個階層所以在SCSS編輯時要注意層級是否錯誤導致結果沒有出來-->
+<!--筆記:在預覽模式中修正再套用在檔案中比較有效率-->
+<!--筆記:先處理細微處至完善再複製到整體 勝 過 先做整體結果一次要修改多個細節-->
+<!--筆記: inline的物件全都不能推margine、padding-->
+<!--筆記:在row上使用no-gutters可以消除col中的預設padding-->
+<!--關於互動視窗，按鈕當中的data-target="#exampleModal"，對應視窗中的id="exampleModal"-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D'Perfume</title>
+
+    
+
+
+    <!--引用順序：Bootstrap的CSS→jQuery的js→Bootstrap的js-->
+    <!--Bootstrap的CSS-->
+    <link rel="stylesheet" href="scss/all.css"> 
+    <!--→jQuery的js-->
+    <script src="/js/jquery-3.5.1.min.js"></script>
+    <!--→自訂義的jQuery-->
+    <script src="/js/all.js"></script>
+    <!--Bootstrap的js(為了搭配Bootstrap互動視窗)-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="header container" >
+        <div class="navbar d-flex justify-content-between align-items-center">
+            <h1><a href="index.html">d’Perfume</a></h1>
+            <nav class="menu">
+                <ul class="list-unstyled d-flex flex-column flex-md-row">
+                    <li><a href="all-products-page.html"><img class="d-none d-md-inline" src="img/Product.svg">Product</a></li>
+                    <li class="d-none d-md-block"><a href="log-in.html"><img class="d-none d-md-inline" src="img/log in.svg">log in</a></li>
+                    <li><a href="#"><img class="d-none d-md-inline" src="img/heart.svg" height="20px" height="20px">Wishlist</a></li>
+                    <li class="d-none d-md-block"><a href="#"><img class="d-none d-md-inline" src="img/Cart(3).svg">Cart(3)</a></li>
+                    <li class="d-block d-md-none"><a href="#">Blog</a></li>
+                    <li class="d-block d-md-none"><a href="#">Contact</a></li>
+                    <li class="d-block d-md-none"><a href="#">Mypage</a></li>
+                </ul>
+            </nav>
+            <div class="sm-btn d-block d-md-none">
+                <a class="car-btn mr-4" href=""><img src="img/Cart(3).svg" alt="購物車"></a>
+                <span class="bg-primary text-white rounded-circle">3</span>
+                <a class="menu-btn"><img src="img/icons8-menu.svg" alt="漢堡選單"></a>
+            </div>
+        </div>
+    </div>
+    <div class="banner" data-aos="zoom-out-up">
+        <div class="Perfume-your-day d-flex justify-content-center justify-content-lg-end align-items-center">
+            <div class="Perfume-your-day-container mx-2">
+                <h2>Perfume your day</h2>
+                <p>A perfume is like a piece of clothing, a message, a way of presenting oneself a costume that according to the person who wears it.</p>
+                <a class="border rounded-pill " href="all-products-page.html">Shop now</a>
+            </div>
+        </div>
+    </div>
+    <!--產品列表開始-->
+    <div class="main-products-list">
+        <ul class="list-unstyled">
+            <!--產品一-->
+            <li class="row no-gutters flex-column-reverse flex-md-row" data-aos="fade-left">
+                <div class="product-introduction col-12 col-md-6 d-flex justify-content-start justify-content-md-center align-items-center">
+                    <div class="product-introduction-container">
+                        <h3 class="font-weight-bolder pt-2">Gabrielle CHANEL</h3>
+                        <p>全新嗅覺體驗，花香四溢、明亮馥郁。結合茉莉、依蘭依蘭、橙花和最迷人的格拉斯晚香玉之花香，呈現出夢幻花香氣息。 極具女性特質的香奈兒嘉柏麗香水，專為光芒四射的她而生。</p>
+                        <a href="the-products-page.html" class="text-primary">查看更多</a>
+                    </div>
+                </div>
+                <div class="product-img col-12 col-md-6"><img src="img/Gabrielle CHANEL.png" alt="產品圖片"></div>
+            </li>
+            <!--產品二-->
+            <li class="row no-gutters flex-column-reverse flex-md-row-reverse" data-aos="fade-right">
+                <div class="product-introduction col-12 col-md-6 d-flex justify-content-start justify-content-md-center align-items-center">
+                    <div class="product-introduction-container">
+                        <h3 class="font-weight-bolder pt-2">Five O’clock Au Gingembre</h3>
+                        <p>生薑與溫醇的肉桂香、紅糖的香甜摻和成一氣，溫暖微辛的氣息反倒形成一股輕煙氤氳開來，還帶點微微煙醺感漫溢在整個鼻息之間，細聞之下,又還有溫溫淡淡的木香，溫和而暖心。</p>
+                        <a href="the-products-page.html" class="text-primary">查看更多</a>
+                    </div>
+                </div>
+                <div class="product-img col-12 col-md-6"><img src="img/FiveO’clockAuGingembre.png" alt="產品圖片"></div>
+            </li>
+            <!--產品三-->
+            <li class="row no-gutters flex-column-reverse flex-md-row" data-aos="fade-left">
+                <div class="product-introduction col-12 col-md-6 d-flex justify-content-start justify-content-md-center align-items-center">
+                    <div class="product-introduction-container">
+                        <h3 class="font-weight-bolder pt-2">CHANEL N°5</h3>
+                        <p>N°5，女性魅力的極致精髓。散發柔美澄透的乙醛花束香氣。經典傳奇香氛，蘊藏於極簡設計的獨特瓶身。</p>
+                        <a href="the-products-page.html" class="text-primary">查看更多</a>
+                    </div>
+                </div>
+                <div class="product-img col-12 col-md-6"><img src="img/CHANELN°5.png" alt="產品圖片"></div>
+            </li>
+            <!--產品四-->
+            <li class="row no-gutters flex-column-reverse flex-md-row-reverse" data-aos="fade-right">
+                <div class="product-introduction col-12 col-md-6 d-flex justify-content-start justify-content-md-center align-items-center">
+                        <ul class="Plan-a-free-online-training list-unstyled">
+                            <li>
+                                <h4>1.<br>Levels of Preventive<br>Maintenance Compliance</h4> 
+                                <p>The core idea of preventative maintenance is the performance of proactive actions against unscheduled downtime in order to identify potential defects before they evolve into something more severe.</p>
+                            </li>
+                            <li>
+                                <h4>2. <br>Percentage of Planned <br>Maintenance</h4>
+                                <p>The planned maintenance percentage is the total planned maintenance time in your CMMS software over a date range over the total number of hours of a service performed by the technicians.</p>
+                            </li>
+                            <li>
+                                <h4>3. <br>Critical percentage of <br>planned maintenance</h4>
+                                <p>Calculating the critical percentage of planned maintenance will help you prioritize the most important operations that should be performed immediately.</p>
+                            </li>
+                            <a class="free-online-btn border rounded-pill py-3 px-3" href="">Plan a free online training</a>
+                        </ul>
+                </div>
+                <div class="product-img col-12 col-md-6"><img src="img/Levels.png" alt="產品圖片"></div>
+            </li>
+        </ul>
+    </div>
+    <div class="gray-area" data-aos="flip-left">
+        <div class="product-list container">
+            <ul class="row">
+                <div class="product col-12 col-md-4 pb-4">
+                    <a href="the-products-page.html"><img src="img/Poppy & Barley.png" alt="Poppy & Barley"></a>
+                    <h5>Poppy & Barley</h5>
+                    <h6 class="name">Jo Malone</h6>
+                    <span class="price">NT$1,380</span><span class="orignal-price" style="text-decoration:line-through;">NT$1,380</span>
+                </div>
+                <div class="product col-12 col-md-4 pb-4">
+                    <a href="the-products-page.html"><img src="img/Body Wash.png" alt="Body Wash"></a>
+                    <h5>Body Wash</h5>
+                    <h6 class="name">Curology</h6>
+                    <span class="price">NT$1,580</span>
+                </div>
+                <div class="product col-12 col-md-4 pb-4">
+                    <a href="the-products-page.html"><img src="img/Apple.PNG" alt="Apple Cider Vinegar Capsule"></a>
+                    <h5>Apple Cider Vinegar Capsule</h5>
+                    <h6 class="name">Tonik</h6>
+                    <span class="price">NT$1,580</span>
+                </div>
+            </ul>
+            
+        </div>
+    </div>
+    <div class="Bottle-Recycling container" data-aos="fade-right">
+        <div class="row">
+            <div class="col-12 col-md-8"><img class="img-fluid" src="/img/Bottle-Recycling.png" alt="回收空瓶"></div>
+            <div class="Bottle-Recycling-introduction col-12 col-md-4 d-flex justify-content-start justify-content-md-center align-items-center">
+                <div class="Bottle-Recycling-container">
+                    <h3 class="font-weight-bolder pt-1">Bottle-Recycling</h3>
+                    <p class="subtitle">Recycle your used empty bottles and be rewarded!</p>
+                    <p>For the past 10 years, we have collected over 800,000 bottles through Empty Bottle Recycling Campaign and planted more than 860 pine trees for a better environment.For the past 10 years, we have collected over 800,000 bottles through Empty Bottle Recycling Campaign and planted more than 860 pine trees for a better environment.</p>
+                    <a href="" class="text-primary">查看更多</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="subscribe" data-aos="zoom-out-up">
+        <div class="subscribe-container container">
+            <form action="index.html" class="text-center text-lg-left">
+                <label class="font-weight-bolder mx-2" style="font-size:32px" for="email">記得 <br>訂閱以獲取更多資訊！</label> <br>
+                <input placeholder="Your email address" type="email" name="mail" id="email">
+                <input class="submit" type="submit" value="Subscribe">
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+          <div class="footer-container d-flex justify-content-between align-items-center">
+              <div class="tittle d-flex align-items-center justify-content-sm-between flex-wrap">
+                  <h1 class="ml-2"><a href="#">d’Perfume</a></h1>
+                  <span class="text-light">© 2020. All Rights Reserved.</span>
+              </div>
+              <nav class="menu">
+              <ul class="list-unstyled d-flex">
+                  <li><a href="">Product</a></li>
+                  <li><a href="">Blog</a></li>
+                  <li><a href="">Contact</a></li>
+                  <li><a href=""></a></li>
+              </ul>
+              </nav>
+          </div>
+        </div>
+    </div>
+
+    <!--載入簡易動態效果-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+
+
+@include ipad{
+    .brand-nav{
+        display: block;
+    }
+}
+
+.product-information{
+    margin-bottom: 30px;
+    .main-information{
+        margin-bottom: 80px;
+        h2{
+            font-size: $text-xl;
+        }
+        form{
+            select{
+                height: 50px;
+                font-size: $text-s;
+            }
+            input{
+                height: 50px;
+                font-size: $text-s;
+            }
+        }
+        a{
+            color:black;
+            margin-bottom: 80px;
+            &:hover{
+                color:$primary;
+            }
+        }
+    }
+    
+    .purchase-notes{
+        h3{
+            font-size: $text-s;
+        }
+        p{
+            font-size: $text-s;
+        }
+    }
+    
+}

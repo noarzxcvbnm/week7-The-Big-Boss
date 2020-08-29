@@ -1,0 +1,84 @@
+
+@include ipad{
+    .brand-nav{
+        display: block;
+    }
+}
+
+.products{
+    .card{
+        padding-bottom: 60px;
+        img{
+            width: 100%;
+        }
+        h5{
+            font-weight: bold;
+            font-size: $text-l;
+            margin-top: 8px;
+        }
+        h6,.price{
+            font-size: $text-s;
+            padding-right: 8px;
+        }
+        .orignal-price{
+            color: #8D8D8D;
+            margin-bottom: 4px;
+        }
+        .card-body a{
+            img{
+                height: 16px;
+                width: auto;
+            }
+        }
+    }
+}
+
+.pagination{
+    ul{
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 60px;
+    }
+    a{
+        font-size: $text-m;
+        padding: 10px;
+        color:black;
+        &:hover{
+            text-decoration: underline !important; 
+        }
+    }
+    .text-decoration{
+        text-decoration: underline !important; 
+        color: $primary;
+    }
+}
+
+@include iphoneSE{
+    .products{
+        margin-top: 42px;
+        .container{
+            padding-right: 25px;
+            padding-left: 25px;
+            }
+        .card{
+            padding-bottom: 32px;
+            padding-right: 7.5px;
+            padding-left: 7.5px;
+            h5{
+            font-weight: bold;
+            font-size: $text-m;
+            margin-top: 8px;
+            }
+        }
+        .pagination{
+            ul{
+            text-align: center;
+            margin: 0 auto;
+            margin-bottom: 40px;
+            }
+        }
+        
+    }
+    
+    
+}

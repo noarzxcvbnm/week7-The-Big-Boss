@@ -1,0 +1,196 @@
+.banner{
+    height: 870px;
+    background-image: url(../img/banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.Perfume-your-day{
+    max-width: 1110px;
+    height: 870px;
+    margin: 0 auto;
+    .Perfume-your-day-container{
+        width: 445px;
+    }
+    h2,p,a{
+        color: white;
+    }
+    h2{
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 60px;
+    }
+    p{
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 30px;
+    }
+    a{
+        font-size: 30px;
+        padding: 10px 100px;
+        background: rgba(0, 0, 0, 0) none repeat scroll !important;
+        border: white solid 3px !important;
+        
+        &:hover{
+            background: rgba(255, 255, 255, 0.2) none repeat scroll !important;
+        }
+    }
+}
+@include iphoneSE{
+    .Perfume-your-day{
+        a{
+            padding: 10px 60px;
+        }
+    }
+}
+@include ipad{
+    .Perfume-your-day{
+        a{
+            padding: 10px 100px;
+        }
+    }
+}
+
+/*主產品內容*/
+.main-products-list{
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    
+    .row{
+        padding: 0;
+        margin:0px;
+    }
+    img{
+        width: 100%; /*讓產品圖片可以隨著網頁縮放改變大小!!!*/
+        /*滑過圖片變暗的效果
+        &:hover{
+            -webkit-filter: brightness(90%); 
+            filter: brightness(90%);
+        }
+        */
+    }
+    .product-introduction-container{
+        h3{font: size 32px;}
+        p{font-size:$text-m}
+        a{  
+            font-size:$text-s;
+            display: block;
+            padding-bottom: 32px;    
+        }
+    }
+    @include ipad{
+        
+        .product-introduction-container {
+            max-width: 68%;
+        }
+    }
+}
+@media(max-width:768px){
+    .main-products-list{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+.Plan-a-free-online-training{
+    h4{
+        font-weight: bold;
+        font-size: $text-l;
+        line-height: 36px;
+        margin-bottom: 4px;
+    }
+    p{
+        font-size:$text-s;
+        margin-bottom: 52px;
+    }
+    .free-online-btn{
+        display: block;
+        text-align: center;
+        color:black;
+        margin:0 auto;
+        font-size: $text-m;
+        background: rgba(0, 0, 0, 0) none repeat scroll !important;
+        border: black solid 2px !important;
+        margin-top: 8px;
+        /*按鈕為黑色，透明度0.2*/
+        &:hover{
+            background: rgba(0, 0, 0, 0.2) none repeat scroll !important;
+        }
+        
+    }
+}
+@include ipad{
+    .Plan-a-free-online-training{
+        max-width: 68%;
+    }
+    
+}
+
+
+.gray-area{
+    background-color: #E0E0E0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    ul{padding-inline-start: 0px;}
+    .product-list{
+        .product{
+            padding-left: 15px;
+            padding-right: 15px;
+            
+        }
+        a{
+            &:hover{
+                -webkit-filter: brightness(90%); /* Safari */
+                filter: brightness(90%);
+            }
+        }
+        img{
+            width: 100%;
+        }
+        h5{
+            font-weight: bold;
+            font-size: $text-l;
+            line-height: 36px;
+            margin-top: 8px;
+        }
+        h6,.price{
+            font-size: $text-s;
+            line-height: 24px;
+            margin-bottom: 16px;
+            padding-right: 8px;
+        }
+        .orignal-price{
+            color: #8D8D8D;
+        }
+    }
+}
+.Bottle-Recycling{
+    .row{
+        margin-top: 60px;
+        margin-bottom: 60px;
+        img{
+            width: 100%;
+            height: auto;
+        }
+        .Bottle-Recycling-container{
+            max-width: 90%;
+            h3{
+                font-size: $text-xl;
+            }
+            .subtitle{
+                font-size: $text-m;
+            }
+            p{
+                font-size: $text-s;
+            }
+            a{font-size:$text-s}
+        }
+    }
+    
+    
+}

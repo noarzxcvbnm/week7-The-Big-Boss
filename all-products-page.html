@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D'Perfume Products</title>
+    <!--引用順序：Bootstrap的CSS→jQuery的js→Bootstrap的js-->
+    <!--Bootstrap的CSS-->
+    <link rel="stylesheet" href="scss/all.css"> 
+    <!--→jQuery的js-->
+    <script src="/js/jquery-3.5.1.min.js"></script>
+    <!--→自訂義的jQuery-->
+    <script src="/js/all.js"></script>
+    <!--Bootstrap的js(為了搭配Bootstrap互動視窗)-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Button trigger modal -->
+  <!-- Modal -->
+  <div class="modal fade" id="put-in-car" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body text-primary text-center font-weight-bolder">
+          已加入購物車
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="put-in-love" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body text-primary text-center font-weight-bolder">
+          已加入我的收藏
+        </div>
+      </div>
+    </div>
+  </div>
+<!--彈跳視窗結束-->
+  <div class="header container" >
+    <div class="navbar d-flex justify-content-between align-items-center">
+        <h1><a href="index.html">d’Perfume</a></h1>
+        <nav class="menu">
+            <ul class="list-unstyled d-flex flex-column flex-md-row">
+                <li><a href="all-products-page.html"><img class="d-none d-md-inline" src="img/Product.svg">Product</a></li>
+                <li class="d-none d-md-block"><a href="log-in.html"><img class="d-none d-md-inline" src="img/log in.svg">log in</a></li>
+                <li><a href="#"><img class="d-none d-md-inline" src="img/heart.svg" height="20px" height="20px">Wishlist</a></li>
+                <li class="d-none d-md-block"><a href="#"><img class="d-none d-md-inline" src="img/Cart(3).svg">Cart(3)</a></li>
+                <li class="d-block d-md-none"><a href="#">Blog</a></li>
+                <li class="d-block d-md-none"><a href="#">Contact</a></li>
+                <li class="d-block d-md-none"><a href="#">Mypage</a></li>
+            </ul>
+        </nav>
+        <div class="sm-btn d-block d-md-none">
+            <a class="car-btn mr-4" href=""><img src="img/Cart(3).svg" alt="購物車"></a>
+            <span class="bg-primary text-white rounded-circle">3</span>
+            <a class="menu-btn"><img src="img/icons8-menu.svg" alt="漢堡選單"></a>
+        </div>
+    </div>
+  </div>
+    <div class="brand-nav bg-secondary" data-aos="flip-up">
+        <div class="container">
+            <ul class="d-flex list-unstyled">
+                <li><a href="">CHANEL</a></li>
+                <li><a href="">Jo Malone</a></li>
+                <li><a href="">Curology</a></li>
+                <li><a href="">Dior</a></li>
+                <li><a href="">Chloe</a></li>
+                <li><a href="">ZARA</a></li>
+            </ul>
+        </div>
+        
+    </div>
+    <div class="products" data-aos="zoom-out-up">
+        <div class="container">
+            <div class="row">
+                <div class="card col-6 col-md-4 col-lg-3" style="width: 18rem;">
+                    <a href="/the-products-page.html"><img class="card-img-top" src="/img/product-page/photo-1519669011783-4eaa95fa1b7d.png" alt="Card image cap"></a>
+                    <div class="card-body">
+                      <h5 class="card-title font-weight-bolder">Poppy & Barley</h5>
+                      <h6 class="name">Jo Malone</h6>
+                    <span class="price d-inline-block">NT$1,380</span><span class="orignal-price d-inline-block" style="text-decoration:line-through;">NT$1,380</span><br>
+                      <a href="#" class="mr-2" data-toggle="modal" data-target="#put-in-love"><img src="/img/product-page/heart.svg" alt="商品愛心"></a>
+                      <a href="#" class="" data-toggle="modal" data-target="#put-in-car"><img src="/img/product-page/shopping-cart.svg" alt="加入購物車"></a>
+                    </div>
+                  </div>
+                  <div class="card col-6 col-md-4 col-lg-3" style="width: 18rem;">
+                    <a href="/the-products-page.html"><img class="card-img-top" src="/img/product-page/photo-1530630458144-014709e10016.png" alt="Card image cap"></a>
+                    <div class="card-body">
+                      <h5 class="card-title font-weight-bolder">Poppy & Barley</h5>
+                      <h6 class="name">Jo Malone</h6>
+                    <span class="price d-inline-block">NT$1,380</span><span class="orignal-price d-inline-block" style="text-decoration:line-through;">NT$1,380</span><br>
+                      <a href="#" class="mr-2" data-toggle="modal" data-target="#put-in-love"><img src="/img/product-page/heart.svg" alt="商品愛心"></a>
+                      <a href="#" class="" data-toggle="modal" data-target="#put-in-car"><img src="/img/product-page/shopping-cart.svg" alt="加入購物車"></a>
+                    </div>
+                  </div>
+                  <div class="card col-6 col-md-4 col-lg-3" style="width: 18rem;">
+                    <a href="/the-products-page.html"><img class="card-img-top" src="/img/product-page/photo-1544468266-6a8948003cd7.png" alt="Card image cap"></a>
+                    <div class="card-body">
+                      <h5 class="card-title font-weight-bolder">Poppy & Barley</h5>
+                      <h6 class="name">Jo Malone</h6>
+                    <span class="price d-inline-block">NT$1,380</span><span class="orignal-price d-inline-block" style="text-decoration:line-through;">NT$1,380</span><br>
+                      <a href="#" class="mr-2" data-toggle="modal" data-target="#put-in-love"><img src="/img/product-page/heart.svg" alt="商品愛心"></a>
+                      <a href="#" class="" data-toggle="modal" data-target="#put-in-car"><img src="/img/product-page/shopping-cart.svg" alt="加入購物車"></a>
+                    </div>
+                  </div>
+                  <div class="card col-6 col-md-4 col-lg-3" style="width: 18rem;">
+                    <a href="/the-products-page.html"><img class="card-img-top" src="/img/product-page/photo-1559264729-91549dddfc45.png" alt="Card image cap"></a>
+                    <div class="card-body">
+                      <h5 class="card-title font-weight-bolder">Poppy & Barley</h5>
+                      <h6 class="name">Jo Malone</h6>
+                    <span class="price d-inline-block">NT$1,380</span><span class="orignal-price d-inline-block" style="text-decoration:line-through;">NT$1,380</span><br>
+                      <a href="#" class="mr-2" data-toggle="modal" data-target="#put-in-love"><img src="/img/product-page/heart.svg" alt="商品愛心"></a>
+                      <a href="#" class="" data-toggle="modal" data-target="#put-in-car"><img src="/img/product-page/shopping-cart.svg" alt="加入購物車"></a>
+                    </div>
+                  </div>
+            
+                <div class="card col-6 col-md-4 col-lg-3" style="width: 18rem;">
+                    <a href="/the-products-page.html"><img class="card-img-top" src="/img/product-page/photo-1566977776052-6e61e35bf9be.png" alt="Card image cap"></a>
+                    <div class="card-body">
+                      <h5 class="card-title font-weight-bolder">Poppy & Barley</h5>
+                      <h6 class="name">Jo Malone</h6>
+                    <span class="price d-inline-block">NT$1,380</span><span class="orignal-price d-inline-block" style="text-decoration:line-through;">NT$1,380</span><br>
+                      <a href="#" class="mr-2" data-toggle="modal" data-target="#put-in-love"><img src="/img/product-page/heart.svg" alt="商品愛心"></a>
+                      <a href="#" class="" data-toggle="modal" data-target="#put-in-car"><img src="/img/product-page/shopping-cart.svg" alt="加入購物車"></a>
+                    </div>
+                  </div>
+                  <div class="card col-6 col-md-4 col-lg-3" style="width: 18rem;">
+                    <a href="/the-products-page.html"><img class="card-img-top" src="/img/product-page/photo-1578996834254-13d1b661a5ed.png" alt="Card image cap"></a>
+                    <div class="card-body">
+                      <h5 class="card-title font-weight-bolder">Poppy & Barley</h5>
+                      <h6 class="name">Jo Malone</h6>
+                    <span class="price d-inline-block">NT$1,380</span><span class="orignal-price d-inline-block" style="text-decoration:line-through;">NT$1,380</span><br>
+                      <a href="#" class="mr-2" data-toggle="modal" data-target="#put-in-love"><img src="/img/product-page/heart.svg" alt="商品愛心"></a>
+                      <a href="#" class="" data-toggle="modal" data-target="#put-in-car"><img src="/img/product-page/shopping-cart.svg" alt="加入購物車"></a>
+                    </div>
+                  </div>
+                  <div class="card col-6 col-md-4 col-lg-3" style="width: 18rem;">
+                    <a href="/the-products-page.html"><img class="card-img-top" src="/img/product-page/photo-1582211594533-268f4f1edcb9.png" alt="Card image cap"></a>
+                    <div class="card-body">
+                      <h5 class="card-title font-weight-bolder">Poppy & Barley</h5>
+                      <h6 class="name">Jo Malone</h6>
+                    <span class="price d-inline-block">NT$1,380</span><span class="orignal-price d-inline-block" style="text-decoration:line-through;">NT$1,380</span><br>
+                      <a href="#" class="mr-2" data-toggle="modal" data-target="#put-in-love"><img src="/img/product-page/heart.svg" alt="商品愛心"></a>
+                      <a href="#" class="" data-toggle="modal" data-target="#put-in-car"><img src="/img/product-page/shopping-cart.svg" alt="加入購物車"></a>
+                    </div>
+                  </div>
+                  <div class="card col-6 col-md-4 col-lg-3" style="width: 18rem;">
+                    <a href="/the-products-page.html"><img class="card-img-top" src="/img/product-page/photo-1584435731369-1e74c4e9385e.png" alt="Card image cap"></a>
+                    <div class="card-body">
+                      <h5 class="card-title font-weight-bolder">Poppy & Barley</h5>
+                      <h6 class="name">Jo Malone</h6>
+                    <span class="price d-inline-block">NT$1,380</span><span class="orignal-price d-inline-block" style="text-decoration:line-through;">NT$1,380</span><br>
+                      <a href="#" class="mr-2" data-toggle="modal" data-target="#put-in-love"><img src="/img/product-page/heart.svg" alt="商品愛心"></a>
+                      <a href="#" class="" data-toggle="modal" data-target="#put-in-car"><img src="/img/product-page/shopping-cart.svg" alt="加入購物車"></a>
+                    </div>
+                  </div>
+            
+                <div class="card col-6 col-md-4 col-lg-3" style="width: 18rem;">
+                    <a href="/the-products-page.html"><img class="card-img-top" src="/img/product-page/photo-1585120040315-2241b774ad0f.png" alt="Card image cap"></a>
+                    <div class="card-body">
+                      <h5 class="card-title font-weight-bolder">Poppy & Barley</h5>
+                      <h6 class="name">Jo Malone</h6>
+                    <span class="price d-inline-block">NT$1,380</span><span class="orignal-price d-inline-block" style="text-decoration:line-through;">NT$1,380</span><br>
+                      <a href="#" class="mr-2" data-toggle="modal" data-target="#put-in-love"><img src="/img/product-page/heart.svg" alt="商品愛心"></a>
+                      <a href="#" class="" data-toggle="modal" data-target="#put-in-car"><img src="/img/product-page/shopping-cart.svg" alt="加入購物車"></a>
+                    </div>
+                  </div>
+                  <div class="card col-6 col-md-4 col-lg-3" style="width: 18rem;">
+                    <a href="/the-products-page.html"><img class="card-img-top" src="/img/product-page/photo-1592247691114-69a06342531a.png" alt="Card image cap"></a>
+                    <div class="card-body">
+                      <h5 class="card-title font-weight-bolder">Poppy & Barley</h5>
+                      <h6 class="name">Jo Malone</h6>
+                    <span class="price d-inline-block">NT$1,380</span><span class="orignal-price d-inline-block" style="text-decoration:line-through;">NT$1,380</span><br>
+                      <a href="#" class="mr-2" data-toggle="modal" data-target="#put-in-love"><img src="/img/product-page/heart.svg" alt="商品愛心"></a>
+                      <a href="#" class="" data-toggle="modal" data-target="#put-in-car"><img src="/img/product-page/shopping-cart.svg" alt="加入購物車"></a>
+                    </div>
+                  </div>
+                  <div class="card col-6 col-md-4 col-lg-3" style="width: 18rem;">
+                    <a href="/the-products-page.html"><img class="card-img-top" src="/img/product-page/photo-1592842414746-a2fd2101381f.png" alt="Card image cap"></a>
+                    <div class="card-body">
+                      <h5 class="card-title font-weight-bolder">Poppy & Barley</h5>
+                      <h6 class="name">Jo Malone</h6>
+                    <span class="price d-inline-block">NT$1,380</span><span class="orignal-price d-inline-block" style="text-decoration:line-through;">NT$1,380</span><br>
+                      <a href="#" class="mr-2" data-toggle="modal" data-target="#put-in-love"><img src="/img/product-page/heart.svg" alt="商品愛心"></a>
+                      <a href="#" class="" data-toggle="modal" data-target="#put-in-car"><img src="/img/product-page/shopping-cart.svg" alt="加入購物車"></a>
+                    </div>
+                  </div>
+                  <div class="card col-6 col-md-4 col-lg-3" style="width: 18rem;">
+                    <a href="/the-products-page.html"><img class="card-img-top" src="/img/product-page/photo-1594913366159-1832cfbe7ca1.png" alt="Card image cap"></a>
+                    <div class="card-body">
+                      <h5 class="card-title font-weight-bolder">Poppy & Barley</h5>
+                      <h6 class="name">Jo Malone</h6>
+                    <span class="price d-inline-block">NT$1,380</span><span class="orignal-price d-inline-block" style="text-decoration:line-through;">NT$1,380</span><br>
+                      <a href="#" class="mr-2" data-toggle="modal" data-target="#put-in-love"><img src="/img/product-page/heart.svg" alt="商品愛心"></a>
+                      <a href="#" class="" data-toggle="modal" data-target="#put-in-car"><img src="/img/product-page/shopping-cart.svg" alt="加入購物車"></a>
+                    </div>
+                  </div>
+            </div>
+            <div class="pagination">
+              <ul class="list-unstyled d-flex">
+                <li><a class="text-decoration" href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+              </ul>
+            </div>
+        </div>
+    </div>
+    <div class="subscribe" data-aos="zoom-out-up">
+      <div class="subscribe-container container">
+          <form action="index.html" class="text-center text-lg-left">
+              <label class="font-weight-bolder mx-2" style="font-size:32px" for="email">記得 <br>訂閱以獲取更多資訊！</label> <br>
+              <input placeholder="Your email address" type="email" name="mail" id="email">
+              <input class="submit" type="submit" value="Subscribe">
+          </form>
+      </div>
+    </div>
+    <div class="footer">
+    <div class="container">
+      <div class="footer-container d-flex justify-content-between align-items-center">
+          <div class="tittle d-flex align-items-center justify-content-sm-between flex-wrap">
+              <h1 class="ml-2"><a href="#">d’Perfume</a></h1>
+              <span class="text-light">© 2020. All Rights Reserved.</span>
+          </div>
+          <nav class="menu">
+          <ul class="list-unstyled d-flex">
+              <li><a href="">Product</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href=""></a></li>
+          </ul>
+          </nav>
+      </div>
+    </div>
+  </div>
+<!--載入簡易動態效果-->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
+</body>
+</html>

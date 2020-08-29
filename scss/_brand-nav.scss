@@ -1,0 +1,14 @@
+.brand-nav{
+    display: none;
+    margin-bottom: 80px;
+    a{
+        line-height: 52px;
+        display: block;
+        color: white;
+        margin-right: 28px;
+        font-size: $text-m;
+        &:hover{
+         color: $primary;   
+        }
+    }
+}

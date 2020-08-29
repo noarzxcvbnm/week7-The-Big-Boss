@@ -1,0 +1,26 @@
+.log-in{
+    img{
+        width: 100%;
+        margin-bottom: 28px;
+    }
+}
+@include ipad{
+    .log-in{
+        img{
+            width: 100%;
+            margin-bottom: 82px;
+        }
+    }
+}
+
+.log-in-information{
+    margin-bottom: 106px;
+    h2{
+        margin-bottom: 12px;
+    }
+    .button{
+        &:hover{
+            color:$primary;
+        }
+    }
+}
