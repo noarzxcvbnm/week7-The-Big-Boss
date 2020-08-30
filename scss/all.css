@@ -10415,6 +10415,8 @@ body a {
 }
 
 .header h1 a {
+  width: 128px;
+  height: 38px;
   text-indent: 999%;
   overflow: hidden;
   white-space: nowrap;
@@ -11032,7 +11034,9 @@ body a {
 }
 
 .footer-container h1 a {
-  text-indent: 199%;
+  width: 128px;
+  height: 38px;
+  text-indent: 101%;
   overflow: hidden;
   white-space: nowrap;
   line-height: 56px;
